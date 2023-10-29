@@ -20,15 +20,13 @@ def discount():
         else:
             print(f'无效的会员等级。请重新输入。')
 
-    prince = float(input('请输入商品单价：'))
-    number = int(input('请输入购买数量：'))
+    def count(prince,number):
 
-    def count():
         result = prince * number
         pay = result * dis
         print(f'总价{result}，实付：{pay}')
 
-    count()
+    return count
 
 
-discount()
+discount()(3,10)
